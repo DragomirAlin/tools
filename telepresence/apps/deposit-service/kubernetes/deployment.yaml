@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deposit-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deposit-service
+  template:
+    metadata:
+      labels:
+        app: deposit-service
+    spec:
+      containers:
+        - name: deposit-service
+          image: dragomiralin/deposit-service
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8881
