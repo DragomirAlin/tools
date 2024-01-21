@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ro.dragomiralin.deposit.domain.Account;
 
-@FeignClient(value = "account", url = "http://localhost:8880")
+@FeignClient(value = "account", url = "http://account-service:8880")
 public interface AccountClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/accounts/{accountId}", produces = "application/json")

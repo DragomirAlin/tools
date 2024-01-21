@@ -17,4 +17,4 @@ spec:
           image: dragomiralin/account-service
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8882
+            - containerPort: 8880

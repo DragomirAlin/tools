@@ -15,6 +15,6 @@ spec:
       containers:
         - name: deposit-service
           image: dragomiralin/deposit-service
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8881

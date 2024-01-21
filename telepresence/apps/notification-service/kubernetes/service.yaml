@@ -7,7 +7,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 8881
+    - port: 8882
       name: http
   selector:
     app: notification-service
